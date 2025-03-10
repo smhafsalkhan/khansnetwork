@@ -8,6 +8,11 @@ variable "instance_type" {
   description = "The instance type to use"
 }
 
+variable "instance_name" {
+  type        = string
+  description = "The instance name to use"
+}
+
 variable "is_instance_create" {
     type = bool
     default = false
