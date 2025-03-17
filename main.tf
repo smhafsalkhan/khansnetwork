@@ -21,3 +21,10 @@ module "compute" {
   instance_name = var.instance_name
   is_instance_create = var.is_instance_create
 }
+
+module "s3_bucket" {
+  source         = "./modules/s3"
+  create_bucket  = var.create_bucket  
+  bucket_name    = var.bucket_name
+  enable_versioning = var.enable_versioning
+}
