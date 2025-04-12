@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "website_bucket" {
-  bucket        = "khansnetwork.in" 
+  bucket        = "afsalkhan.in" 
   force_destroy = true
 
   tags = {
-    Name = "khansnetwork.in"
+    Name = "afsalkhan.in"
   }
 }
 # Allow public accessing
