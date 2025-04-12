@@ -28,6 +28,10 @@ module "s3" {
 }
 
 module "sso" {
-  source              = "./modules/sso"
-  s3_bucket_arn = "arn:aws:s3:::afsalkhan.in"
+  source           = "./modules/sso"
+  s3_bucket_arn    = "arn:aws:s3:::afsalkhan.in"
+}
+
+module "network"{
+  source           = "./modules/network"
 }
