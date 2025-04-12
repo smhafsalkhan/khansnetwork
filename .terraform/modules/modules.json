@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"compute","Source":"./modules/compute","Dir":"modules/compute"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"compute","Source":"./modules/compute","Dir":"modules/compute"},{"Key":"s3","Source":"./modules/s3","Dir":"modules/s3"},{"Key":"s3_bucket","Source":"./modules/s3","Dir":"modules/s3"}]}

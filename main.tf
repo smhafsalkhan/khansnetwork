@@ -22,9 +22,7 @@ module "compute" {
   is_instance_create = var.is_instance_create
 }
 
-module "s3_bucket" {
-  source         = "./modules/s3"
-  create_bucket  = var.create_bucket  
-  bucket_name    = var.bucket_name
-  enable_versioning = var.enable_versioning
+module "s3" {
+  source           = "./modules/s3"
+  static_dir_path  = "${path.root}/staticfiles"
 }

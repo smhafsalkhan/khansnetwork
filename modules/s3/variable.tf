@@ -1,16 +1,4 @@
-variable "create_bucket" {
-  description = "Set to true to create the S3 bucket and all related resources"
-  type        = bool
-  default     = false
-}
-
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
+variable "static_dir_path" {
+  description = "Absolute path to the static files folder"
   type        = string
-}
-
-variable "enable_versioning" {
-  description = "Enable versioning for the S3 bucket"
-  type        = bool
-  default     = true
 }
