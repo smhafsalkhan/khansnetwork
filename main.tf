@@ -29,6 +29,5 @@ module "s3" {
 
 module "sso" {
   source              = "./modules/sso"
-  permission_set_name = "TFEAccess"
-  s3_bucket_arn       = "arn:aws:s3:::khansnetwork.in"
+  s3_bucket_arn = "arn:aws:s3:::khansnetwork.in"
 }

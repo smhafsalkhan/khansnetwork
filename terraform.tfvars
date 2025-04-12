@@ -8,3 +8,4 @@ instance_name = "khansnetwork"
 create_bucket  = true  
 bucket_name    = "khansnetwork"
 enable_versioning = true
+
