@@ -1,0 +1,6 @@
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.90.0/darwin_arm64/terraform-provider-aws_v5.90.0_x5
+modules/compute/.terraform/providers/registry.terraform.io/hashicorp/aws/5.90.0/darwin_arm64/terraform-provider-aws_v5.90.0_x5
+.bashrc
+.terraform.tfstate.lock.info
+.terraform.tfstate.lock.info
+.terraform.tfstate.lock.info
