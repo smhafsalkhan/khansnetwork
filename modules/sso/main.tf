@@ -2,7 +2,7 @@ data "aws_ssoadmin_instances" "this" {}
 
 resource "aws_ssoadmin_permission_set" "tfe" {
   name         = var.permission_set_name
-  instance_arn = data.aws_ssoadmin_instances.this.arn
+  instance_arn = data.aws_ssoadmin_instances.this.arns[0]
   description  = "Permission set for TFE with S3 access"
 }
 
