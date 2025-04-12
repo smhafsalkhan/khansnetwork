@@ -7,7 +7,7 @@ resource "aws_ssoadmin_permission_set" "tfe" {
 }
 
 resource "aws_ssoadmin_permission_set_inline_policy" "s3_access" {
-  instance_arn       = data.aws_ssoadmin_instances.this.arn
+  instance_arn       = data.aws_ssoadmin_instances.this.arns[0]
   permission_set_arn = aws_ssoadmin_permission_set.tfe.arn
 
   inline_policy = jsonencode({
