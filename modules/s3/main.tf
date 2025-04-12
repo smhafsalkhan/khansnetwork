@@ -6,6 +6,16 @@ resource "aws_s3_bucket" "website_bucket" {
     Name = "khansnetwork.in"
   }
 }
+# Allow public accessing
+resource "aws_s3_bucket_public_access_block" "allow_public" {
+  bucket = aws_s3_bucket.website_bucket.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+}
+
 # Enable static website hosting
 resource "aws_s3_bucket_website_configuration" "website_config" {
   bucket = aws_s3_bucket.website_bucket.id
@@ -33,6 +43,7 @@ resource "aws_s3_bucket_policy" "public_read" {
       }
     ]
   })
+  depends_on = [aws_s3_bucket_public_access_block.allow_public]
 }
 
 # Upload all files in ./staticfiles to the bucket
