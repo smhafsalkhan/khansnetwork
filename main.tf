@@ -26,3 +26,9 @@ module "s3" {
   source           = "./modules/s3"
   static_dir_path  = "${path.root}/staticfiles"
 }
+
+module "sso" {
+  source              = "./modules/sso"
+  permission_set_name = "TFEAccess"
+  s3_bucket_arn       = "arn:aws:s3:::khansnetwork.in"
+}
